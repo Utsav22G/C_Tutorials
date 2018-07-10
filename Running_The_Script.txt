@@ -1,0 +1,9 @@
+gcc -Wall filename.c -o filename --> Creates filename.exe executable from filename.c; -Wall is used to display compiler warnings
+
+gcc options:
+
+	-Werror --> gcc -Wall -Werror filename.c -o filename --> Warnings generated get converted into errors
+
+	gcc -S filename.c > filename.s --> Produces only the assembly code
+
+	gcc -C filename.c --> Produces only the machine level code
