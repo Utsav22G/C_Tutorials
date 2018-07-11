@@ -61,9 +61,9 @@ for finding a^b.
 
 int main(){
 	int quit = 0;
-	int n;  // n is the number for which you will find factorial
-	int p = 1;  // you are going to keep the factorial of n in p
-	double base, exp; // for a^b
+	int n;
+	int p = 1;
+	double base, exp;
 
 	int option; // for keeping the menu option
 	while(!quit){
@@ -73,8 +73,6 @@ int main(){
 		printf("2. Find a^b\n");
 		printf("3. Quit\n");
 		printf("What do you want to do? ");
-
-		// get the response into option variable.
 		scanf("%d", &option);
 
 		/*Now. you can use if-else to check the option and do needful

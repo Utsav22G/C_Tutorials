@@ -21,9 +21,9 @@ in the string, then your program just need to print the last one.
 int main(){
     char my_str[] = "In this program we will find the longest word in a string";
 
-    int longest = 0; // initially longest word length is 0
-    char word[50];  // You will need to find each word from my_str and keep in this array
-    char longestWord[50]; // will keep the current longest word here
+    int longest = 0;
+    char word[50];
+    char longestWord[50];
 
     int i = 0, j;
 

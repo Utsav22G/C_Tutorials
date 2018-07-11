@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define MAX 10   // all places in the program where compiler will find
-                 // MAX it will be replaced with 10
-
-
+#define MAX 10
 
 int main(){
     // array to hold each digits of the input number
@@ -21,7 +18,7 @@ int main(){
         printf("Total digits can be > 0 and <=10 only\n");
         return 0;
     }
-    // we need to go on assigning from right to left.
+    // assigning from right to left.
 
     for(i = MAX-n; i < MAX; ++i){
         printf("Input next digit: ");
@@ -41,9 +38,9 @@ int main(){
         return 0;
     }
 
-    // now will do the addition:
+    //do the addition:
     int carry = 0, unitPlace, sum;
-    // we need to keep the count of digits of new number as there can be increase
+    // keep the count of digits of new number as there can be increase
     // in the number of digits
     int newCount = 0;
     for(i = MAX - 1; i >= 0; --i){
@@ -54,7 +51,7 @@ int main(){
         else{
             sum = arr[i] + carry;
         }
-        // now find the digit at unit's place
+        // find the digit at unit's place
         unitPlace = sum % 10;
         // find the carry
         carry = sum / 10;

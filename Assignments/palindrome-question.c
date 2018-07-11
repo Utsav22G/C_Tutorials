@@ -25,28 +25,46 @@ detected as Palindrome.
 we consider only 4 punctuations,   . ?  ! and ,
 
 Your program will just need to ignore them (treat them as space).
+
     "Cigar? Toss it in a can. It is so tragic."
     Should be detected as palindrome.
-
- *** For this assignment I will not write any instructions or guidance, you are free
-        to implement it with your own way, you can use the string.h functions
-
-    Good luck.
 
 */
 
 
 int main(){
-    char string [100];
+    char string[100];
     printf("Enter a string: ");
     scanf("%[^\n]", string);
 
     int isPalindrome = 1;  // assign 0 to this if the string is a NOT palindrome
 
-    // write code to test if string is a palindrome
+    int i = 0, j = strlen(string) - 1;
+
+    while(i < j && isPalindrome) {
+        j = 0;
+
+        // skip all the spaces or punctuation marks from left
+        while(string[i] == ' ' || string[i] == '?' || string[i] == '!' string[i] == '.' || string[i] == ',')
+            i++;
+
+        // skip all the spaces or punctuation marks from right
+        while(string[j] == ' ' || string[j] == '?' || string[j] == '!' string[j] == '.' || string[j] == ',')
+            j--;
+
+        // ith character in upper case
+        char left = (char)(string[i] >= 'a' && string[i] <= 'z'? string[i]-32 : string[i]);
+        // jth character in upper case
+        char right = (char)(string[j] >= 'a' && string[j] <= 'z'? string[j]-32 : string[j]);
+
+        if (left != right){
+            isPalindrome = 0;
+        }
+        i++; // move i from left to right
+        j--; // move j from right to left
+    }
 
 
-    // at the end you need to test
     if (isPalindrome){
         printf("Yes, it is Palindrome!\n");
     }

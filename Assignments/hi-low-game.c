@@ -28,8 +28,8 @@
   "Game Over!!!, try to be Mathematical".
 */
 
-#include <stdio.h>  // for standard I/O operations
-#include <time.h>   // for time function
+#include <stdio.h>
+#include <time.h>
 #include <stdlib.h> // for rand function
 
 int main(){
@@ -83,22 +83,6 @@ int main(){
   }
   return 0;
 }
-
-
-/********************* EXTRA CREDIT ************************/
-// Attempt this extra credit section only if you completed the normal
-// section. Otherwise no extra credit will be give.
-// Total Extra credit - 15.
-
-// you need to print some extra messages depending upon the number of
-// chances user took to find the guess.
-
-// If the user guessed the number successfully in <=3 steps, print, "You are Super Duper NINJA!"
-// If the user guessed the number successfully in >3 and <=5 print, "You are Crezy NINJA!"
-// If the user guessed the number successfully in 6 or 7 steps print, "You have potential to be a NINJA!"
-
-// --------------------------------------------------------//
-
 
 
 //****************  Example Output *****************************/
