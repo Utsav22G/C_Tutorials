@@ -6,4 +6,20 @@ gcc options:
 
 	gcc -S filename.c > filename.s --> Produces only the assembly code
 
-	gcc -C filename.c --> Produces only the machine level code
+	gcc -C filename.c --> Produces only the machine level code (complied code) w/o any linking
+
+For more, visit https://www.thegeekstuff.com/2012/10/gcc-compiler-options/
+
+
+ar command --> ar -cvq libxutils.a *.o  --> creates libxutils.a from all the .o files
+
+ar options:
+	
+	-q --> ar -q libxutils.a *.o --> Will archive all .o files without checking for replacement
+					 Used for high-speed operations
+	
+	-c --> ar -c libxutils.a *.o --> Run the archiving process in silent mode, no warnings issued
+
+	-v --> ar -c libxutils.a *.o --> Run the archiving process in verbose mode, displaying files processed
+	
+For more, visit https://www.systutorials.com/docs/linux/man/1-ar/
