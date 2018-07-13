@@ -8,6 +8,8 @@ gcc options:
 
 	gcc -C filename.c --> Produces only the machine level code (complied code) w/o any linking
 
+	gcc -Wall file.c -o file -lm --> When using Math.h library, as Math.h is not linked with other C libraries
+
 For more, visit https://www.thegeekstuff.com/2012/10/gcc-compiler-options/
 
 
