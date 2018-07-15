@@ -41,14 +41,12 @@ int main()
 {
 	char up, low;
 	printf("Enter an upper case character: ");
-	scanf("%s", &up);
-	up = (to_lower_case(up));
-	printf("Lower case of %s is: %s", up);
+	scanf("%c", &up);
+	printf("Lower case of %c is: %c\n\n", up, (to_lower_case(up)));
 
 	printf("Enter a lower case character: ");
-	scanf("%s", &low);
-	low = (to_upper_case(low));
-	printf("Upper case of %s is: %s", low);
+	scanf(" %c", &low);
+	printf("Upper case of %c is: %c\n", low, (to_upper_case(low)));
 
 	return 0;
 }
