@@ -8,7 +8,7 @@ int main() {
 	printf("%d\n", var);	// prints the value of var
 
 	p = &var;		// assigns the address of var to pointer p
-	*p = 10;		// change value of the variable whose address is p to 10
+	*p = 10;		// change value of the variable whose address is assigned to p to 10
 	printf("%d\n", var);	// prints the value of var
 	
 	*p = *p + 1;	// adds 1 to value of var

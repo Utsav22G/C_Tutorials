@@ -13,7 +13,7 @@ void split(char string[], char fsplit[], char lsplit[]) {
 		fsplit[i] = string[i];
 		i++;
 	}
-	fsplit[i] = '\0'; 	// terminate the word
+	fsplit[i] = '\0'; 	// replace '*' with null char
 	i++;
 
 	int j = 0;
@@ -23,6 +23,25 @@ void split(char string[], char fsplit[], char lsplit[]) {
 	}
 	lsplit[j] = '\0'; 	// terminate the word
 }
+
+/*	POINTER VERSION
+void split(char *ptr, char *fsplit, char *lsplit) {
+	int i = 0;
+	while(*(ptr+i) != '*') {
+		*(fsplit+i) = *(ptr+i);
+		i++;
+	}
+	*(fsplit+i) = '\0'; 	// replace '*' with null char
+	i++;
+
+	int j = 0;
+	while(*(ptr+j) != '\0') {
+		*(lsplit+j) = *(ptr+i+j);
+		j++;
+	}
+	*(lsplit+j) = '\0'; 	// terminate the word
+}
+*/
 
 int main() {
 	char str[] = "book*abacus";
